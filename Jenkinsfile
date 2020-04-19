@@ -24,8 +24,6 @@ pipeline {
               steps {
                   withAWS(region:'us-east-1',credentials:'aws-static') {
                   sh 'echo "Uploading content with AWS creds"'
-                      def identity=awsIdentity();//Log AWS credentials
-                      
                       s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'index.html', bucket:'jenkins-s3-pipeline')
                   }
               }
