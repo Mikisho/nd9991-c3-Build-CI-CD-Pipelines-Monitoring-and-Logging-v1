@@ -16,6 +16,9 @@ As a part of the project, you will need to install Jenkins and a few plugins to 
 1. Understanding of software testing frameworks - JMeter and JUnit
 1. Understanding of deployment strategies 
 
+## S3bucket file access url
+`https://jenkins-s3-pipeline.s3.amazonaws.com/index.html`
+
 
 
 
